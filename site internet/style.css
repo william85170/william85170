@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Dancing Script','Cinzel';
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    border-bottom: 3px solid #17172c
+}
+nav h1{
+    color: #0b657c;;
+    font-family:'Dancing Script', 'Cinzel';
+    font-size: 50px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color:rgb(26, 2, 131);;
+    margin-right: 10px;
+    border-bottom: 1px solid #0b657c;
+    padding-bottom: 5px ;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('C:/users/william/OneDrive/Bureau/Nouveau Dossier.jpeg/corse2.jpeg.jpg'); 
+    background-size: cover;
+    color: none;
+    padding: 40px;
+   
+}
+header h1{
+    font-family:'Dancing Script','Cinzel';
+    font-size: 70px;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom:1px solid ;
+}
+header button{
+    padding: 10px 20px;
+    background-color: rgba(103, 131, 184, 0.479);
+    color: #000;
+    border: none;
+    font-size: 20px;
+    font-family: "Dancing Script","Cinzel";
+    outline: none;
+    cursor: pointer;
+} 
+.main{
+    margin-top:40px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.main .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color:rgb(115, 169, 190);
+    color: rgb(255, 255, 255);
+
+}
+.main .content .card .left img{
+    height: 100px;
+    width: 300px;
+    margin-top:5px ;
+    flex-wrap: wrap;
+}
+.main .content .card .right{
+    flex: 0 0 70%;
+}
+.main .content .card .right img{            /*les photos ne se mettent pas correctement je vais essayer de les ajuster en consequence*/
+    height: 300px;
+    width: 300px;
+    margin-top: 5px;
+    
+}
+.img2{            /*les photos ne se mettent pas correctement je vais essayer de les ajuster en consequence*//*copie du 1er */
+    height: 300px;
+    width: 100px;
+    margin-top: 5px;
+    flex:center;
+    display: flex;
+}
+footer{
+    margin-top:40px ;
+    border-top: solid #6f6f6f;
+    background-color: rgb(64, 177, 230);
+    color: black;
+    padding: 30px 100px;
+    font-family: "Dancing Script" "Cinzel";
+    padding-bottom: 20px;
+}
+footer h1{
+    font-family: "Dancing Script","Cinzel";
+    border-bottom: 1px solid #fff;
+    width: 20%;
+}
+footer .services{
+    margin-top:-10px ;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .services .service{
+    margin-right: 30px;
+    padding: 10px;
+
+}
+footer .services .service p{
+    max-width: 300px;
+}
+footer #contact{
+    color: rgb(rgba(255, 0, 0, 0), rgb(0, 0, 0), blue);
+}
+@media screen and (max-width:680px){
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .card{
+    margin: 10px;
+    }
+    .main .main .content .card .right .img{
+    height: 200px;
+    width: 50%;
+    margin-top: 0px;
+    }
+    .main .content .card{
+    display: block;
+    }
+    footer{
+    padding: 30px;
+    }
+}
